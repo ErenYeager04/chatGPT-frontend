@@ -14,7 +14,7 @@ const Home = () => {
     setLoading(true)
     setImage('')
     setError('')
-    const response = await fetch('http://localhost:4000/api/user/getImageUrl', {
+    const response = await fetch('https://backend-tqho.onrender.com/api/user/getImageUrl', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ prompt })
